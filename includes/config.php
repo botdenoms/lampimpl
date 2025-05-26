@@ -1,8 +1,8 @@
 <?php
-$host = 'localhost';
-$dbname = 'lampimpl';
-$username = 'root';
-$password = '';
+$host = 'b4uj3tr63uw1lggdbkz6-mysql.services.clever-cloud.com';
+$dbname = 'b4uj3tr63uw1lggdbkz6';
+$username = 'ubuij8358nmuc2y3';
+$password = getenv('DB_PASS');
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
