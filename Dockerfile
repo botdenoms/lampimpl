@@ -1,9 +1,9 @@
-FROM php:8.2-cli
+FROM php:8.2-apache
 
 WORKDIR /var/www/html
 
 COPY . .
 
-EXPOSE 8000
+RUN a2enmod rewrite
 
-CMD [ "php", "-S", "0.0.0.0:8000" ]
+EXPOSE 80
